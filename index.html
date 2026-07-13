@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shiongmao Wok — تقاليد يابانية، ووك بإتقان</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/motion@10.18.0/dist/motion.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Tajawal', sans-serif; }
+</style>
+</head>
+<body class="bg-ink text-cream font-ar">
+
+  <header class="absolute top-0 inset-x-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 h-20 flex items-center justify-between gap-4" dir="ltr">
+      
+      <a href="index.html" class="flex items-center gap-2 flex-shrink-0 group">
+        <div class="w-11 h-11 md:w-12 md:h-12 rounded-full overflow-hidden border border-crimson/30 shrink-0 shadow-lg">
+          <img src="images/panda-logo.png" alt="Shiongmao Wok Logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="flex flex-col justify-center items-center mt-1">
+          <span class="text-xl md:text-2xl font-bold text-crimson leading-none tracking-wide">SHIONGMAO</span>
+          <div class="flex items-center gap-2 mt-1">
+            <span class="w-3 md:w-4 h-[1px] bg-crimson"></span>
+            <span class="text-[0.65rem] md:text-[0.7rem] text-cream font-medium tracking-widest uppercase">WOK</span>
+            <span class="w-3 md:w-4 h-[1px] bg-crimson"></span>
+          </div>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-base font-semibold">
+        <a href="index.html" class="nav-link text-gold border-b-2 border-gold pb-1">Home</a>
+        <a href="menu.html" class="nav-link hover:text-gold transition text-white/70">Menu</a>
+        <a href="#footer" class="nav-link hover:text-gold transition text-white/70">Contact Us</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="hidden lg:block w-[150px]"></div>
+
+        <button id="mobile-nav-btn" class="lg:hidden w-10 h-10 flex items-center justify-center border border-white/20 rounded-full">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    
+    <div id="mobile-nav-menu" class="hidden lg:hidden bg-ink-2 border-t border-white/10 px-5 py-4 flex flex-col gap-4 text-sm text-left" dir="ltr">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#footer">Contact Us</a>
+    </div>
+  </header>
+
+<div class="relative w-full bg-white overflow-hidden min-h-screen lg:min-h-[160vh] flex flex-col justify-center">    
+    <div class="absolute inset-0 w-full bg-no-repeat bg-cover bg-center" style="background-image: url('images/frame4.png');"></div>
+    
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/10 to-transparent z-0 pointer-events-none"></div>
+
+    <section class="relative w-full max-w-7xl mx-auto px-5 md:px-8 pt-36 md:pt-40 pb-12 flex flex-col z-10 flex-grow">
+      
+      <div class="grid lg:grid-cols-2 gap-10 relative z-10 w-full mb-16 lg:mb-24">
+        <div class="hidden lg:block"></div>
+        
+        <div data-reveal class="max-w-xl w-full text-left relative z-30 pt-4">
+          <p class="tracking-widest text-gold text-sm font-bold mb-4 drop-shadow-md">مكونات طازجة، نكهة جريئة</p>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] mb-6 drop-shadow-xl text-white">
+            <span class="text-gold font-serif" dir="ltr">SHIONGMAO</span><br/>
+            تقاليد يابانية أصيلة،<br>ووك بإتقان.
+          </h1>
+          
+          <p class="text-white/95 max-w-md mr-auto mb-8 leading-relaxed drop-shadow-lg text-base md:text-lg font-medium">
+            استمتع بفن السوشي الأصيل، ممزوجًا بحرارة الووك الجريئة — منيو مبني على مكونات طازجة والتزام لا يساوم.
+          </p>
+          
+          <div class="flex flex-wrap items-center justify-end gap-4">
+            <a href="menu.html" class="btn-primary font-sans tracking-wide shadow-lg" dir="ltr">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal class="w-full text-center mt-auto relative z-10 pb-24">
+        <div class="max-w-2xl mx-auto">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 font-serif text-[#111]" dir="ltr">
+            Cultural Fusion - and<br>Premium Sushi.
+          </h2>
+          <p class="text-[#333] leading-relaxed text-base md:text-lg font-bold max-w-lg mx-auto">
+            استمتع بنقطة التقاء عالمين من المطبخ: دقة وحرفية السوشي، وحرارة طهي الووك الجريئة، مجتمعين في أطباق راقية لا تُنسى.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <section class="py-20 px-5 md:px-12 bg-ink relative overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center mb-12" data-reveal>
+        <h2 class="text-3xl md:text-4xl text-white font-bold">الأطباق الأعلى تقييمًا</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center">
+        <div class="rounded-2xl overflow-hidden border border-gold/40 aspect-[4/3] group cursor-pointer shadow-lg bg-black/50">
+          <img src="images/sushi-1.jpg" alt="Premium Sushi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" />
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-gold/40 aspect-[4/3] group cursor-pointer shadow-lg bg-black/50">
+          <img src="images/sushi-2.jpg" alt="Sushi Assortment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" />
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-gold/40 aspect-[4/3] group cursor-pointer shadow-lg bg-black/50">
+          <img src="images/noodles.jpg" alt="Wok Noodles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" />
+        </div>
+        <div class="pr-2 lg:pr-4 flex flex-col justify-center">
+          <h3 class="text-xl text-gold mb-3 font-bold">أطباق الووك</h3>
+          <p class="text-[0.9rem] text-gray-300 leading-relaxed mb-4 drop-shadow-md">
+            تُقلى بسرعة وتُقدَّم بجرأة — أطباق الووك المميزة عندنا تجمع بين خضار طازجة، لحوم مقطعة يدويًا، وصوص مميز لنكهة لا تُخطئها.
+          </p>
+          <a href="menu.html" class="text-gold text-[0.8rem] font-bold flex items-center gap-3 hover:text-white transition-colors duration-300">
+            اعرف أكتر <span class="w-6 h-[1px] bg-crimson"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-4 px-5 md:px-12 bg-ink relative overflow-hidden">
+    <img src="images/koi.png" alt="سمكة كوي" class="absolute top-1/2 left-10 md:left-20 -translate-y-1/2 w-[200px] md:w-[350px] opacity-[0.12] invert mix-blend-screen pointer-events-none z-0" />
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[60%_35%] gap-10 lg:gap-16 items-center justify-between relative z-10">
+      
+      <div class="relative rounded-2xl p-6 md:p-10 text-[#1a1a1a] shadow-lg flex flex-col md:flex-row items-center gap-6 overflow-hidden" style="background-color: #E6C8A9;">
+        <div class="absolute inset-2 border border-[#1a1a1a]/30 rounded-xl pointer-events-none"></div>
+        
+        <div class="w-full md:w-1/2 relative z-10">
+          <h3 class="text-2xl md:text-3xl font-bold mb-4 text-black">الشيف بالتفصيل</h3>
+          <p class="text-sm md:text-base leading-relaxed font-medium text-black/80">
+            بخبرة ١٠ سنوات، الشيف تاكومي ناكامورا بيقدّم دقة وانضباط وشغف مالهوش مثيل في كل طبق بيخرج من المطبخ.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 relative z-10 flex justify-center md:justify-end">
+          <img src="images/chef.jpg" alt="Chef Illustration" class="max-w-full h-auto object-contain max-h-[300px]" />
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl text-white mb-5 font-bold drop-shadow-md">فن شيونغماو ووك</h3>
+        <p class="text-gray-300 text-[0.9rem] leading-relaxed mb-4 drop-shadow-md">
+          كل طبق بيبدأ من اختيار المكونات — مكونات موسمية مختارة يدويًا، بتتعامل معاها بنفس الاهتمام سواء قابلت نار الووك أو سكينة السوشي.
+        </p>
+        <p class="text-gray-300 text-[0.9rem] leading-relaxed drop-shadow-md">
+          النتيجة منيو بيحترم التقاليد وفي نفس الوقت مش خايف يفاجئك: نكهات جريئة، متعددة الطبقات، وطازة دايمًا.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="gallery" class="py-16 px-5 md:px-12 bg-ink relative z-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-8">
+        <h2 class="text-sm md:text-base text-gold font-bold flex items-center gap-3">
+          معرض الصور <span class="w-8 h-[1px] bg-gold/50 inline-block"></span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 md:gap-6">
+        <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          <div class="rounded-xl overflow-hidden border border-gold/40 aspect-[4/3] group cursor-pointer">
+            <img src="images/gallery-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Sushi Item 1" />
+          </div>
+          <div class="rounded-xl overflow-hidden border border-gold/40 aspect-[4/3] group cursor-pointer">
+            <img src="images/gallery-2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Sushi Item 2" />
+          </div>
+          <div class="rounded-xl overflow-hidden border border-gold/40 aspect-[4/3] group cursor-pointer">
+            <img src="images/gallery-3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" alt="Sushi Item 3" />
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 rounded-xl p-5 flex flex-col items-center justify-center text-center bg-black/20">
+          <span class="text-gold/50 text-sm font-bold mb-3">شغفنا في صورة</span>
+          <p class="text-white/70 text-[0.85rem] leading-relaxed">
+            تصفح بعضاً من أطباقنا المميزة. كل صورة هنا تروي قصة اهتمامنا بالتفاصيل وحرصنا على تقديم لوحة فنية تسر العين قبل المعدة.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="py-2 px-6 md:px-12 bg-black border-t border-white/5 relative overflow-hidden">
+    <div class="absolute right-0 top-0 h-full w-full md:w-1/2 pointer-events-none z-0">
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent z-10"></div>
+      <img src="images/japan.jpg" alt="خلفية جبل اليابان" class="w-full h-full object-cover opacity-40 grayscale" />
+    </div>
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-start gap-6 relative z-10" dir="ltr">
+      <div class="w-24 h-24 shrink-0 hover:rotate-6 transition-transform duration-500">
+        <img src="images/panda-logo.png" alt="شعار شيونغماو" class="w-full h-full object-contain" />
+      </div>
+      <div class="flex flex-col justify-center items-center md:items-start pt-1">
+        <img src="images/name-removebg-preview.png" alt="Shiongmao Wok" class="h-10 md:h-12 w-auto object-contain mb-3" />
+        <div dir="rtl" class="text-center md:text-right space-y-3">
+          <p class="text-gold/90 text-sm font-bold">مكونات طازجة، ونكهة لا تُنسى</p>
+          
+          <div class="flex items-center justify-center md:justify-start gap-5 text-white/60 py-2">
+            <a href="tel:+201000000000" class="flex items-center gap-2 hover:text-gold transition" dir="ltr">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span class="text-sm font-sans tracking-wider">+20 100 000 0000</span>
+            </a>
+            <a href="#" class="hover:text-emerald-500 transition" title="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+            <a href="#" class="hover:text-pink-500 transition" title="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="hover:text-white transition" title="X (Twitter)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+          </div>
+
+          <p class="text-white/30 text-[11px] pt-1">© 2026 Shiongmao Wok. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
